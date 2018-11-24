@@ -1,0 +1,347 @@
+html {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font: 16px Verdana, Geneva, sans-serif;
+  line-height: 1.6em;
+}
+figure {
+  overflow-x: scroll;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+figure td.gutter {
+  background-color: lightGray;
+  text-align: right;
+  padding: 0 0.5em;
+}
+#header {
+  height: 200px;
+}
+.site-title {
+  padding-top: 1em;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+.post-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.post-header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.post-header-wrapper .post-header {
+  width: 1100px;
+}
+.post-header-wrapper .post-header .post-meta {
+  padding-top: 2em;
+}
+.post-header {
+  padding-bottom: 2em;
+}
+ul.title-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: dimGray;
+}
+ul.title-menu li {
+  padding: 0 1em;
+}
+#content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#content {
+  width: 800px;
+  padding: 0.5em;
+}
+#side-nav {
+  background-color: #f8f8f8;
+  width: 300px;
+}
+li.index {
+  padding: 2em 0.5em;
+  list-style-type: none;
+}
+li.toc-item {
+  padding-bottom: 0.5em;
+}
+.index-title {
+  padding: 0.5em 0;
+  font-size: 1.5em;
+}
+a.nav,
+a.category-list-link,
+a.tag-list-link,
+a.archive-list-link,
+a.toc-link {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 2px;
+}
+a.nav:hover,
+a.category-list-link:hover,
+a.tag-list-link:hover,
+a.archive-list-link:hover,
+a.toc-link:hover {
+  border-bottom: inset;
+}
+.post-meta {
+  display: flex;
+  color: dimGray;
+}
+.post-date {
+  padding-right: 2em;
+}
+.tag {
+  border-left: dotted 1px;
+  padding: 0 0.2em;
+}
+.tag:last-child {
+  border-right: dotted 1px;
+}
+#side-nav {
+  padding: 0.5em;
+}
+.widget-title {
+  font-weight: bold;
+  border-bottom: inset;
+}
+.category-list,
+.category-list-child,
+.archive-list {
+  font-size: 0.9em;
+  list-style: none;
+  padding-left: 0.5em;
+}
+ul.tag-list {
+  font-size: 0.9em;
+  padding-left: 0.5em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.tag-list li {
+  margin: 2px 10px 2px 0;
+}
+span[class$="list-count"]:before {
+  content: ' (';
+}
+span[class$="list-count"]:after {
+  content: ')';
+}
+nav.page-navigator span,
+nav.page-navigator a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: solid 1px;
+}
+nav.page-navigator a {
+  background-color: Wheat;
+}
+.article-entry pre,
+.post pre,
+.article-entry .highlight,
+.post .highlight {
+  background: Ivory;
+  margin: 0 -10px;
+  padding: 15px 10px;
+  border-style: solid;
+  border-color: color-border;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #555;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  line-height: 25.6px;
+}
+.article-entry .highlight .gutter pre,
+.post .highlight .gutter pre,
+.article-entry .gist .gist-file .gist-data .line-numbers,
+.post .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  text-align: right;
+  padding-left: 1em;
+  font-size: 0.85em;
+}
+.article-entry pre,
+.post pre,
+.article-entry code,
+.post code {
+  font-family: font-mono;
+}
+.article-entry code,
+.post code {
+  background: color-background;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+.article-entry pre code,
+.post pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.article-entry .highlight pre,
+.post .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.article-entry .highlight table,
+.post .highlight table {
+  margin: 0;
+  width: 100%;
+}
+.article-entry .highlight td,
+.post .highlight td {
+  border: none;
+  padding: 0;
+}
+.article-entry .highlight .gutter,
+.post .highlight .gutter {
+  width: 3em;
+}
+.article-entry .highlight figcaption,
+.post .highlight figcaption {
+  font-size: 0.85em;
+  color: SteelBlue;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.article-entry .highlight figcaption a,
+.post .highlight figcaption a {
+  float: right;
+}
+.article-entry .highlight .gutter pre,
+.post .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.article-entry .highlight .line,
+.post .highlight .line {
+  height: 25.6px;
+}
+.article-entry .highlight .line.marked,
+.post .highlight .line.marked {
+  background: #515151;
+}
+.article-entry .gist,
+.post .gist {
+  margin: 0 -10px;
+  border-style: solid;
+  border-color: color-border;
+  border-width: 1px 0;
+  background: Ivory;
+  padding: 15px 10px 15px 0;
+}
+.article-entry .gist .gist-file,
+.post .gist .gist-file {
+  border: none;
+  font-family: font-mono;
+  margin: 0;
+}
+.article-entry .gist .gist-file .gist-data,
+.post .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.article-entry .gist .gist-file .gist-data .line-numbers,
+.post .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+.article-entry .gist .gist-file .gist-data .line-data,
+.post .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.article-entry .gist .gist-file .highlight,
+.post .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.article-entry .gist .gist-file .gist-meta,
+.post .gist .gist-file .gist-meta {
+  background: Ivory;
+  color: SteelBlue;
+  font: 0.85em font-sans;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 10px;
+}
+.article-entry .gist .gist-file .gist-meta a,
+.post .gist .gist-file .gist-meta a {
+  color: color-link;
+  font-weight: normal;
+}
+.article-entry .gist .gist-file .gist-meta a:hover,
+.post .gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment,
+pre .title {
+  color: SteelBlue;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: LimeGreen;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: IndianRed;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: IndianRed;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: DodgerBlue;
+}
