@@ -5,17 +5,7 @@ body {
   margin: 0;
   font: 16px Verdana, Geneva, sans-serif;
   line-height: 1.6em;
-}
-figure {
-  overflow-x: scroll;
-  background-color: #f0f0f0;
-  padding: 0;
-  margin: 0;
-}
-figure td.gutter {
-  background-color: lightGray;
-  text-align: right;
-  padding: 0 0.5em;
+  color: #303030;
 }
 #header {
   height: 200px;
@@ -23,7 +13,12 @@ figure td.gutter {
 .site-title {
   padding-top: 1em;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.site-subtitle {
+  padding-top: 1em;
+  text-align: center;
   font-weight: bold;
 }
 .post-title {
@@ -95,17 +90,17 @@ a.toc-link:hover {
 }
 .post-meta {
   display: flex;
-  color: dimGray;
+  color: Gray;
 }
 .post-date {
   padding-right: 2em;
 }
 .tag {
-  border-left: dotted 1px;
+  border-left: 1px dotted lightGray;
   padding: 0 0.2em;
 }
 .tag:last-child {
-  border-right: dotted 1px;
+  border-right: 1px dotted lightGray;
 }
 #side-nav {
   padding: 0.5em;
@@ -120,6 +115,16 @@ a.toc-link:hover {
   font-size: 0.9em;
   list-style: none;
   padding-left: 0.5em;
+}
+ol.toc,
+ol.toc-child {
+  list-style: none;
+  padding-left: 0;
+}
+ol.toc li,
+ol.toc-child li {
+  text-indent: -1em;
+  padding-left: 1.5em;
 }
 ul.tag-list {
   font-size: 0.9em;
@@ -147,11 +152,41 @@ nav.page-navigator a {
 nav.page-navigator a {
   background-color: Wheat;
 }
+figure {
+  border-left: 5px solid #69f;
+  overflow-x: scroll;
+  background-color: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+figure td.gutter {
+  text-align: right;
+  color: lightGray;
+  padding: 0 0.5em;
+  border-right: double lightGray;
+}
+#gotopButton {
+  display: none;
+  height: 3em;
+  width: 3em;
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: steelBlue;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
 .article-entry pre,
 .post pre,
 .article-entry .highlight,
 .post .highlight {
-  background: Ivory;
+  background: #f0f0f0;
   margin: 0 -10px;
   padding: 15px 10px;
   border-style: solid;
@@ -160,8 +195,8 @@ nav.page-navigator a {
   overflow: auto;
   color: #555;
   line-height: 1.2em;
-  font-size: 0.9em;
-  line-height: 25.6px;
+  font-size: 9px;
+  line-height: 14.4px;
 }
 .article-entry .highlight .gutter pre,
 .post .highlight .gutter pre,
@@ -228,7 +263,7 @@ nav.page-navigator a {
 }
 .article-entry .highlight .line,
 .post .highlight .line {
-  height: 25.6px;
+  height: 14.4px;
 }
 .article-entry .highlight .line.marked,
 .post .highlight .line.marked {
@@ -240,7 +275,7 @@ nav.page-navigator a {
   border-style: solid;
   border-color: color-border;
   border-width: 1px 0;
-  background: Ivory;
+  background: #f0f0f0;
   padding: 15px 10px 15px 0;
 }
 .article-entry .gist .gist-file,
@@ -272,7 +307,7 @@ nav.page-navigator a {
 }
 .article-entry .gist .gist-file .gist-meta,
 .post .gist .gist-file .gist-meta {
-  background: Ivory;
+  background: #f0f0f0;
   color: SteelBlue;
   font: 0.85em font-sans;
   text-shadow: 0 0;
